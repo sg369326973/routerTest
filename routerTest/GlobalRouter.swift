@@ -57,6 +57,8 @@ class GlobalRouter: NSObject {
                         }
                     }
                 }
+                //释放内存
+                free(propertyList)
                 pushClassStance.pushViewController(vc, animated: true)
                 return true
             }
